@@ -1,10 +1,6 @@
 <!-- ./pages/blog/index.vue -->
 
 <script setup>
-// const print = (wareev) => {
-//   console.log(wareev);
-// };
-
 definePageMeta({
   key: (route) => route.fullPath,
 });
@@ -14,18 +10,7 @@ const {
   query: { tags },
 } = useRoute();
 
-// const router = useRouter();
-
 const filter = ref(tags?.split(","));
-console.log({ filter });
-
-// watch(filter, (value) => {
-//   console.log({ value });
-//   router.push({
-//     path: "/blog",
-//     query: { tags: value },
-//   });
-// });
 
 // set meta for page
 useHead({
@@ -88,32 +73,3 @@ useHead({
     </section>
   </main>
 </template>
-
-<style scoped>
-/* .page-heading {
-  @apply p-12 bg-slate-50;
-}
-.page-heading > .wrapper {
-  @apply max-w-3xl m-auto;
-}
-
-.page-section {
-  @apply p-4 py-8 m-auto max-w-3xl;
-}
-
-.article-list {
-  @apply flex flex-col gap-6;
-}
-
-.article-item {
-  @apply pt-6 first-of-type:border-none border-t border-slate-200;
-}
-
-.article-item a {
-  @apply no-underline;
-}
-
-.article-item > * > .wrapper {
-  @apply flex items-start gap-4;
-} */
-</style>
