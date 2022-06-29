@@ -1,3 +1,5 @@
+<!-- ./components/SiteHeader.vue -->
+
 <template>
   <header class="site-header">
     <div class="wrapper">
@@ -30,7 +32,4 @@
 .site-logo {
   @apply font-black text-lg;
 }
-/* .site-nav {
-  @apply relative;
-} */
 </style>
