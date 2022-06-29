@@ -1,3 +1,4 @@
+<!-- ./app.vue -->
 <template>
   <div>
     <SiteHeader />

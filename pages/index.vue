@@ -1,3 +1,4 @@
+<!-- ./pages/index.vue -->
 <template>
   <main>
     <section class="hero-section">

@@ -6,12 +6,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply scroll-m-20;
+
+}
 
 html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   @apply text-slate-700;
 }
 
@@ -21,8 +25,12 @@ a {
 }
 
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply font-header;
 }
 
@@ -39,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta {
-  @apply  p-1.5 px-2 bg-slate-50 border border-slate-200 font-semibold rounded-lg;
+  @apply p-1.5 px-2 bg-slate-50 border border-slate-200 font-semibold rounded-lg;
   @apply transition-all hover:-translate-y-0.5 focus:bg-slate-100 active:translate-y-0.5 active:shadow-inner;
 }
 
@@ -47,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   @apply flex items-center gap-2 pr-3;
 }
 
-.img-cont img{
+.img-cont img {
   @apply h-full w-full object-cover;
 }
 
@@ -65,7 +73,8 @@ h1, h2, h3, h4, h5, h6 {
 .page-heading {
   @apply p-12 bg-slate-50;
 }
-.page-heading > .wrapper {
+
+.page-heading>.wrapper {
   @apply max-w-3xl m-auto;
 }
 
@@ -85,6 +94,6 @@ h1, h2, h3, h4, h5, h6 {
   @apply no-underline;
 }
 
-.article-item > * > .wrapper {
+.article-item>*>.wrapper {
   @apply flex items-start gap-4;
 }

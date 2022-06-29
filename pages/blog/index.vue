@@ -49,7 +49,7 @@ useHead({
             <li v-for="article in list" :key="article._path" class="article-item">
               <NuxtLink :to="article._path">
                 <div class="wrapper">
-                  <div class="img-cont w-32">
+                  <div class="img-cont w-32 shrink-0">
                     <img :src="`/${article.img}`" :alt="article.title" class="rounded-lg max-h-[8rem]" />
                   </div>
                   <header>
