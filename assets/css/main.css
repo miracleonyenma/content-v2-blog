@@ -1,0 +1,90 @@
+/* ./assets/css/main.css */
+
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1,800,500,100,700,400,300,200,900&f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  @apply text-slate-700;
+}
+
+
+a {
+  text-decoration: underline;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-header;
+}
+
+.icon {
+  @apply inline-flex w-6 h-6;
+}
+
+.icon.solid {
+  @apply fill-slate-500;
+}
+
+.icon.stroke {
+  @apply stroke-slate-500;
+}
+
+.cta {
+  @apply  p-1.5 px-2 bg-slate-50 border border-slate-200 font-semibold rounded-lg;
+  @apply transition-all hover:-translate-y-0.5 focus:bg-slate-100 active:translate-y-0.5 active:shadow-inner;
+}
+
+.cta.w-icon {
+  @apply flex items-center gap-2 pr-3;
+}
+
+.img-cont img{
+  @apply h-full w-full object-cover;
+}
+
+.article-tags {
+  @apply flex gap-2 py-2;
+}
+
+.article-tags .tag {
+  @apply bg-slate-100 text-slate-700 text-sm p-2 py-1 rounded-md;
+  @apply transition-all !py-0.5 hover:-translate-y-0.5;
+}
+
+/* BLOG PAGES */
+
+.page-heading {
+  @apply p-12 bg-slate-50;
+}
+.page-heading > .wrapper {
+  @apply max-w-3xl m-auto;
+}
+
+.page-section {
+  @apply p-4 py-8 m-auto max-w-3xl;
+}
+
+.article-list {
+  @apply flex flex-col gap-6;
+}
+
+.article-item {
+  @apply pt-6 first-of-type:border-none border-t border-slate-200;
+}
+
+.article-item a {
+  @apply no-underline;
+}
+
+.article-item > * > .wrapper {
+  @apply flex items-start gap-4;
+}
