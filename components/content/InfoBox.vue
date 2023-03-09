@@ -2,7 +2,7 @@
 
 <script setup>
 // import icons from HeroIcons
-import { InformationCircleIcon, ExclamationIcon, BanIcon } from "@heroicons/vue/solid";
+import { InformationCircleIcon, ExclamationTriangleIcon, ExclamationCircleIcon } from "@heroicons/vue/24/solid";
 
 // define props in <script>
 const props = defineProps(["type"]);
@@ -12,8 +12,8 @@ const props = defineProps(["type"]);
   <!-- Access `type` prop in Dynamic class  -->
   <div class="info-box not-prose" :class="[type]">
     <!-- Conditionally render icons based on prop -->
-    <ExclamationIcon v-if="type == 'warning'" class="icon solid" />
-    <BanIcon v-else-if="type == 'error'" class="icon solid" />
+    <ExclamationTriangleIcon v-if="type == 'warning'" class="icon solid" />
+    <ExclamationCircleIcon v-else-if="type == 'error'" class="icon solid" />
     <InformationCircleIcon v-else class="icon solid" />
 
     <details>
@@ -22,8 +22,8 @@ const props = defineProps(["type"]);
         <slot />
       </summary>
       <div class="details pt-2">
-        <!-- Named markdown component to render rich-text -->
-        <Markdown :use="$slots.details" unwrap="p"></Markdown>
+        <!-- Named ContentSlot component to render rich-text -->
+        <ContentSlot :use="$slots.details" unwrap="p"></ContentSlot>
       </div>
     </details>
   </div>

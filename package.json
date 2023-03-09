@@ -7,10 +7,10 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@heroicons/vue": "^1.0.6",
+    "@heroicons/vue": "^2.0.16",
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
-    "@nuxtjs/tailwindcss": "^5.1.2",
-    "@tailwindcss/typography": "^0.5.2",
-    "nuxt": "^3.0.0-rc.4"
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@tailwindcss/typography": "^0.5.9",
+    "nuxt": "^3.2.3"
   }
 }

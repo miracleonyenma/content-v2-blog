@@ -53,8 +53,8 @@ useHead({
       <article class="article">
         <!-- render document coming from query -->
         <ContentRenderer :value="data.article">
-          <!-- render rich text from document -->
-          <MarkdownRenderer :value="data.article" />
+          <!-- render rich text from document
+          <MarkdownRenderer :value="data.article" /> -->
 
           <!-- display if document content is empty -->
           <template #empty>
