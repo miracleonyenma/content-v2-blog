@@ -31,8 +31,6 @@ yarn dev -o
 
 ```ts
 // ./nuxt.config.ts
-import { defineNuxtConfig } from 'nuxt'
-
 export default defineNuxtConfig({
   // My Nuxt config
 })

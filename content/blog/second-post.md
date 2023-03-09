@@ -31,14 +31,13 @@ yarn dev -o
 
 ```ts
 // ./nuxt.config.ts
-import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   // My Nuxt config
 })
 ```
 
-::InfoBox{type="error"}
+::InfoBox{type="info"}
 Here's a handy bit of information for you!
 
 #details
